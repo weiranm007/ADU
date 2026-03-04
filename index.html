@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CapsuleNest ADU Catalog</title>
+    <meta
+      name="description"
+      content="Explore modern ADU capsule homes with specs, floor plans, and pricing in one visual catalog."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">CapsuleNest</div>
+        <div class="nav-links">
+          <a href="#models">Models</a>
+          <a href="#benefits">Why Capsule ADUs</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="nav-cta">Book a tour</button>
+      </nav>
+
+      <section class="hero-content container">
+        <p class="eyebrow">MODERN · PREFAB · SMART LIVING</p>
+        <h1>Discover ADU Capsule Homes Designed for Beautiful, Flexible Living.</h1>
+        <p>
+          Browse a curated collection of backyard studios, family suites, and premium capsule homes.
+          Compare models, floor areas, lead times, and pricing in one immersive catalog.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#models">Browse models</a>
+          <a class="btn btn-secondary" href="#contact">Get quote</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="models" class="section container">
+        <div class="section-head">
+          <h2>Model Catalog</h2>
+          <p>Filter by category to find the perfect capsule home for your property.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Model categories">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="studio">Studio</button>
+          <button class="chip" data-filter="family">Family</button>
+          <button class="chip" data-filter="luxury">Luxury</button>
+          <button class="chip" data-filter="office">Office</button>
+        </div>
+
+        <div class="grid" id="model-grid">
+          <article class="card" data-category="studio">
+            <div class="card-image image-a"></div>
+            <div class="card-body">
+              <h3>AeroPod S1</h3>
+              <p class="meta">258 sq ft · 1 bath · 10-12 weeks</p>
+              <p>Compact studio ADU with panoramic windows and built-in storage wall.</p>
+              <div class="card-foot">
+                <span>From $58,000</span>
+                <button>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="family">
+            <div class="card-image image-b"></div>
+            <div class="card-body">
+              <h3>Haven Duo 2B</h3>
+              <p class="meta">412 sq ft · 2 bed · 1 bath</p>
+              <p>Family-friendly two-bedroom capsule with kitchen island and split sleeping zones.</p>
+              <div class="card-foot">
+                <span>From $96,000</span>
+                <button>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="office">
+            <div class="card-image image-c"></div>
+            <div class="card-body">
+              <h3>WorkNest Pro</h3>
+              <p class="meta">220 sq ft · Office + lounge</p>
+              <p>Dedicated remote-work capsule with acoustic walls, skylight, and integrated desk.</p>
+              <div class="card-foot">
+                <span>From $49,500</span>
+                <button>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="luxury">
+            <div class="card-image image-d"></div>
+            <div class="card-body">
+              <h3>Vista Luxe X</h3>
+              <p class="meta">540 sq ft · 1 bed · spa bath</p>
+              <p>Luxury capsule retreat featuring full-height glazing and smart climate automation.</p>
+              <div class="card-foot">
+                <span>From $139,000</span>
+                <button>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="studio">
+            <div class="card-image image-e"></div>
+            <div class="card-body">
+              <h3>Solo Arc Mini</h3>
+              <p class="meta">196 sq ft · 1 bath · kitchenette</p>
+              <p>Minimal footprint ADU ideal for rental income, guest stays, or student housing.</p>
+              <div class="card-foot">
+                <span>From $44,000</span>
+                <button>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="family">
+            <div class="card-image image-f"></div>
+            <div class="card-body">
+              <h3>Terra Family+ </h3>
+              <p class="meta">620 sq ft · 2 bed · 2 bath</p>
+              <p>Spacious capsule ADU with optional deck and high-efficiency energy package.</p>
+              <div class="card-foot">
+                <span>From $152,000</span>
+                <button>Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="benefits" class="section section-soft">
+        <div class="container benefit-grid">
+          <div>
+            <h2>Why choose CapsuleNest ADUs?</h2>
+            <p>
+              Every unit is engineered for fast installation, premium finishes, and long-term durability.
+              Our catalogue-first approach helps you compare options before you build.
+            </p>
+          </div>
+          <ul>
+            <li>Factory-built quality with rapid on-site setup</li>
+            <li>Energy-efficient envelopes and smart-home integration</li>
+            <li>Permit support package and nationwide shipping</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <div class="contact-box">
+          <h2>Ready to plan your ADU?</h2>
+          <p>Tell us your lot size and preferred model—we’ll send a customized estimate.</p>
+          <form class="contact-form">
+            <input type="text" placeholder="Your name" aria-label="Your name" />
+            <input type="email" placeholder="Email" aria-label="Email" />
+            <select aria-label="Preferred model">
+              <option value="">Preferred model</option>
+              <option>AeroPod S1</option>
+              <option>Haven Duo 2B</option>
+              <option>WorkNest Pro</option>
+              <option>Vista Luxe X</option>
+            </select>
+            <button type="submit">Request estimate</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 CapsuleNest ADU Catalog. Designed for modern backyard living.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

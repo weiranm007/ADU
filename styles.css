@@ -1,0 +1,272 @@
+:root {
+  --bg: #07111f;
+  --bg-soft: #0e1d33;
+  --surface: #ffffff;
+  --muted: #9eb4d1;
+  --text: #eaf1ff;
+  --text-dark: #122033;
+  --accent: #4da3ff;
+  --accent-2: #6ef2d1;
+  --border: #223b5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, #040b15 0%, #08172a 40%, #0b1f36 100%);
+  color: var(--text);
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+  background: radial-gradient(circle at 80% 20%, rgba(110, 242, 209, 0.16), transparent 35%),
+    radial-gradient(circle at 20% 10%, rgba(77, 163, 255, 0.2), transparent 40%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-cta,
+.btn,
+.card-foot button,
+.contact-form button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.65rem 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-cta,
+.btn-primary,
+.contact-form button {
+  background: linear-gradient(90deg, var(--accent), #68c3ff);
+  color: #03101f;
+}
+
+.hero-content {
+  padding: 3rem 0 2rem;
+  max-width: 800px;
+}
+
+.eyebrow {
+  color: var(--accent-2);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.15em;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  margin: 0.4rem 0 0.8rem;
+}
+
+.hero-content p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-head h2,
+#benefits h2,
+#contact h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.section-head p {
+  color: var(--muted);
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1.4rem 0 1.8rem;
+}
+
+.chip {
+  background: #102845;
+  color: #dbe9ff;
+  border: 1px solid #1c3a60;
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  cursor: pointer;
+}
+
+.chip.active {
+  background: linear-gradient(90deg, #1f6fb9, #3497ef);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.card {
+  background: rgba(14, 34, 58, 0.85);
+  border: 1px solid #1f4067;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-a { background-image: linear-gradient(120deg, #3f8ddc, #68f0d5); }
+.image-b { background-image: linear-gradient(120deg, #5f6fff, #8ce6ff); }
+.image-c { background-image: linear-gradient(120deg, #2ec8b2, #4e8fff); }
+.image-d { background-image: linear-gradient(120deg, #6c7fff, #8f5dff); }
+.image-e { background-image: linear-gradient(120deg, #4fc2ff, #8bf8c5); }
+.image-f { background-image: linear-gradient(120deg, #6ed4ff, #2f7fff); }
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  margin: 0;
+}
+
+.meta {
+  color: var(--accent-2);
+  font-size: 0.9rem;
+}
+
+.card-body p {
+  color: #cdddf3;
+}
+
+.card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-foot span {
+  font-weight: 700;
+}
+
+.section-soft {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+}
+
+.benefit-grid p,
+.benefit-grid li {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-box {
+  padding: 1.5rem;
+  border: 1px solid #2a4a72;
+  border-radius: 1rem;
+  background: rgba(10, 29, 52, 0.65);
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.contact-form input,
+.contact-form select {
+  border-radius: 0.7rem;
+  border: 1px solid #30567f;
+  background: #102741;
+  color: var(--text);
+  padding: 0.7rem;
+}
+
+.footer {
+  padding: 1.2rem 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benefit-grid,
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
